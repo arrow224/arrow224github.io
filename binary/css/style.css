@@ -748,7 +748,7 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0px 15px; } }
 
 .partners {
-  background: url(../img/bg.jpg) center/cover no-repeat;
+  background: url("../img/bg.jpg") center/cover no-repeat;
   padding: 100px 0 70px 0; }
   @media (max-width: 767.98px) {
     .partners {
