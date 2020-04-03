@@ -780,7 +780,12 @@ h1, h2, h3, h4, h5, h6 {
     @media (max-width: 767.98px) {
       .partners__column {
         padding: 0 30px; } }
-
+.partners .header-block__title{
+  color: #fff;
+}
+.partners .header-block__title::after{
+  background-color: #fff;;
+}
 .contacts {
   padding: 180px 0 100px 0; }
   @media (max-width: 767.98px) {
