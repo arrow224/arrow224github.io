@@ -1,0 +1,522 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+
+		*{
+			box-sizing: border-box;
+		}
+
+		[style*="Open Sans"] {font-family: 'Open Sans', arial, sans-serif !important;}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border:none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%!important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+    
+		table td {
+			border-collapse: collapse;
+		}
+    
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		.header-td{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.header-td a{
+			font-size: 13px;
+			color: #242424;
+			text-decoration: underline;
+		}
+
+		.header-td a:hover{
+			text-decoration: none;
+		}
+
+		.advantage-td{
+			padding-top: 60px;
+			padding-bottom: 60px;
+			color: #ffffff;
+		}
+
+		.advantage-td h2{
+			font-size: 26px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		.advantage-td p{
+			font-size: 15px;
+			line-height: 30px;
+			margin-bottom: 25px;
+		}
+
+		.advantage-td a{
+			font-size: 14px;
+			font-weight: bold;
+			color: #fa5151;
+			text-decoration: none;
+			text-transform: uppercase;
+			background-color: #ffffff;
+			border-radius: 30px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		.advantage-td a:hover{
+			color: #ffffff;
+			background-color: transparent;
+			border: 2px solid #ffffff;
+		}
+
+		.blog-td{
+			padding-top: 60px;
+			padding-bottom: 35px;
+		}
+
+		.blog-td h2{
+			font-size: 26px;
+			font-weight: bold;
+			color: #242424;
+			margin-top: 0;
+			margin-bottom: 35px;
+		}
+
+		.table-540{
+			margin-bottom: 25px;
+		}
+
+		.table-190 h3{
+			font-size: 16px;
+			font-weight: bold;
+			color: #fa5151;
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+
+		.table-190 p{
+			font-size: 15px;
+			line-height: 30px;
+			color: #311c1c;
+			margin-top: 0;
+			margin-bottom: 35px;
+		}
+
+		.table-190 a{
+			font-size: 14px;
+			font-weight: bold;
+			color: #fa5151;
+			border: 2px solid #fa5151;
+			text-decoration: none;
+			text-transform: uppercase;
+			border-radius: 30px;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		.table-190 a:hover{
+			background-color: #fff;
+		}
+
+		.products-table{
+			width: 100%;
+		}
+
+		.products{
+			padding-bottom: 55px;
+		}
+
+		.products h2{
+			font-size: 26px;
+			font-weight: bold;
+			color: #242424;
+			margin-top: 0;
+			margin-bottom: 35px;
+		}
+
+		.product-table h4{
+			font-size: 16px;
+			font-weight: bold;
+			color: #311c1c;
+			margin-top: 25px;
+			margin-bottom: 15px;
+		}
+
+		.product-table p{
+			font-size: 16px;
+			font-weight: bold;
+			color: #fa5151;
+			margin-top: 0;
+			margin-bottom: 30px;
+		}
+
+		.product-table a{
+			font-size: 14px;
+			font-weight: bold;
+			color: #fa5151;
+			border: 2px solid #fa5151;
+			text-decoration: none;
+			text-transform: uppercase;
+			border-radius: 30px;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		.products-table a:hover{
+			background-color: #fa5151;
+			color: #ffffff;
+		}
+
+		.product-table-wrapper{
+			padding-top: 30px;
+			padding-bottom: 50px;
+			width: 50%;
+		}
+
+		.product-table_one{
+			border-right: 1px solid #dedede;
+			border-bottom: 1px solid #dedede;
+		}
+
+		.product-table_two{
+			border-bottom: 1px solid #dedede;
+		}
+
+		.product-table_three{
+			border-right: 1px solid #dedede;
+		}
+
+		.details-td{
+			padding-top: 90px;
+			padding-bottom: 90px;
+		}
+
+		.details-td h3{
+			font-size: 26px;
+			font-weight: bold;
+			color: #242424;
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+
+		.details-td p{
+			font-size: 15px;
+			line-height: 30px;
+			color: #311c1c;
+			margin-top: 0;
+			margin-bottom: 40px;
+		}
+
+		.details-td a{
+			font-size: 14px;
+			font-weight: bold;
+			color: #ffffff;
+			text-decoration: none;
+			text-transform: uppercase;
+			background-color: #fa5151;
+			border-radius: 30px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		.footer-td{
+			padding-top: 50px;
+			padding-bottom: 40px;
+		}
+
+		.footer-menu td{
+			padding-left: 13px;
+			padding-right: 13px;
+		}
+
+		.footer-copyright p{
+			font-size: 13px;
+			line-height: 22px;
+		}
+
+		.footer-copyright p a{
+			font-size: 13px;
+			color: #fa5151;
+			text-decoration: underline;
+		}
+
+		@media (max-width: 640px) {
+			.table-600{
+				width: 550px;
+			}
+		}
+
+		@media (max-width: 560px) {
+			.table-600{
+				width: 480px;
+			}
+
+			.table-540{
+				width: 420px;
+			}
+
+			.table-540 td{
+				width: 100%;
+				display: block;
+				text-align: left;
+			}
+
+			.table-540 td img{
+				width: 100%;
+			}
+
+			.table-190{
+				width: 100%;
+			}
+
+			.table-190 td{
+				padding: 25px 15px 35px;
+			}
+
+			.table-190 br{
+				display: none;
+			}
+
+			.product-table-wrapper{
+				display: block;
+			}
+
+			.products-table td{
+				width: 100%;
+			}
+		}
+
+		@media (max-width: 420px) {
+			.table-600{
+				width: 320px;
+			}
+
+			.table-540{
+				width: 300px;
+			}
+		}	
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое письмо</div>
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+		<tr>
+			<td>
+				<table class="main table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+					<tr>
+						<td height="30" width="600"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" class="header-td">
+							<table cellpadding="0" cellspacing="0" align="center">
+								<tr>
+									<td>
+										<a href="#" style="font-family: Arial, sans-serif;">Viem this email in browser</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="header-bg">
+							<img src="http://www.picshare.ru/uploads/210220/kMEMHom3bo.png" alt="bunner">
+						</td>
+					</tr>
+					<tr>
+						<td class="advantage-td" bgcolor="#fa5151">
+							<table cellpadding="0" cellspacing="0" align="center">
+								<tr>
+									<td align="center">
+										<h2 style="font-family: Arial, sans-serif;">Why do We Use It?</h2>
+										<p style="font-family: Arial, sans-serif;">It is a long established fact that a reader will <br>
+											be distracted by the readable content of a page <br>
+											when looking at its layout.</p>
+										<a href="#" style="font-family: Arial, sans-serif;">more details</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="blog-td" align="center" bgcolor="#ffffff">
+							<h2 style="font-family: Arial, sans-serif;">From The Blog</h2>
+							<table class="table-540" cellpadding="0" cellspacing="0" align="center" width="540">
+								<tr>
+									<td width="270">
+										<img src="http://www.picshare.ru/uploads/210220/E8tA9LT3v6.png" alt="blog1">
+									</td>
+									<td align="center" bgcolor="#f5f3f2">
+										<table class="table-190" cellpadding="0" cellspacing="0" width="190">
+											<tr>
+												<td>
+													<h3 style="font-family: Arial, sans-serif;">True Love</h3>
+													<p style="font-family: Arial, sans-serif;">Contrary to popular belief, <br>
+														Lorem Ipsum is not simply <br> random text. </p>
+													<a href="#" style="font-family: Arial, sans-serif;">read more</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<table class="table-540" cellpadding="0" cellspacing="0" align="center" width="540">
+								<tr>
+									<td align="center" bgcolor="#f5f3f2">
+										<table class="table-190" cellpadding="0" cellspacing="0" width="190">
+											<tr>
+												<td>
+													<h3 style="font-family: Arial, sans-serif;">True Love</h3>
+													<p style="font-family: Arial, sans-serif;">Contrary to popular belief, <br>
+														Lorem Ipsum is not simply <br> random text. </p>
+													<a href="#" style="font-family: Arial, sans-serif;">read more</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td width="270">
+										<img src="http://www.picshare.ru/uploads/210220/SXUF9PLf88.png" alt="blog1">
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="products" align="center" bgcolor="#ffffff">
+							<h2 style="font-family: Arial, sans-serif;">Our Products</h2>
+							<table cellpadding="0" cellspacing="0" class="products-table">
+								<tr>
+									<td align="center" class="product-table-wrapper product-table_one">
+										<table class="product-table" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="center">
+													<img src="http://www.picshare.ru/uploads/210220/hBGALB2GEQ.png" alt="phone">
+													<h4 style="font-family: Arial, sans-serif;">iPhone 7</h4>
+													<p style="font-family: Arial, sans-serif;">$ 699.00</p>
+													<a href="#" style="font-family: Arial, sans-serif;">shop now</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td align="center" class="product-table-wrapper product-table_two">
+										<table class="product-table" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="center">
+													<img src="http://www.picshare.ru/uploads/210220/35s3Mrf84s.png" alt="phone">
+													<h4 style="font-family: Arial, sans-serif;">Hero 5 Black</h4>
+													<p style="font-family: Arial, sans-serif;">$ 399.00</p>
+													<a href="#" style="font-family: Arial, sans-serif;">shop now</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" class="product-table-wrapper product-table_three">
+										<table class="product-table" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="center">
+													<img src="http://www.picshare.ru/uploads/210220/35s3Mrf84s.png" alt="phone">
+													<h4 style="font-family: Arial, sans-serif;">MacBook Pro</h4>
+													<p style="font-family: Arial, sans-serif;">$ 1299.00</p>
+													<a href="#" style="font-family: Arial, sans-serif;"> shop now</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td align="center" class="product-table-wrapper product-table_four">
+										<table class="product-table" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="center">
+													<img src="http://www.picshare.ru/uploads/210220/35s3Mrf84s.png" alt="phone">
+													<h4 style="font-family: Arial, sans-serif;">Apple Watch Space Grey</h4>
+													<p style="font-family: Arial, sans-serif;">$ 450.00</p>
+													<a href="#" style="font-family: Arial, sans-serif;">shop now</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="details-td" background="http://www.picshare.ru/uploads/210220/9AI07QCv4N.png" style="background-repeat: no-repeat;">
+							<table cellpadding="0" cellspacing="0" align="center">
+								<tr>
+									<td align="center">
+										<h3 style="font-family: Arial, sans-serif;">Happy Valentine's Day</h3>
+										<p style="font-family: Arial, sans-serif;">It is a long established fact that a reader will <br>
+											be distracted by the readable content of a page <br>
+											when looking at its layout.</p>
+										<a href="#" style="font-family: Arial, sans-serif;">more details</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="footer-td" align="center" bgcolor="#ffffff">
+							<table>
+								<tr>
+									<td>
+										<table class="footer-menu" align="center">
+											<tr>
+												<td><a href="#"><img src="http://www.picshare.ru/uploads/210220/02FGkq0tTi.png" alt="fb"></a></td>
+												<td><a href="#"><img src="http://www.picshare.ru/uploads/210220/45bRP3MgiG.png" alt="tw"></a></td>
+												<td><a href="#"><img src="http://www.picshare.ru/uploads/210220/jMn9MfU8h4.png" alt="in"></a></td>
+												<td><a href="#"><img src="http://www.picshare.ru/uploads/210220/i55yKB1P8r.png" alt="gg"></a></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="footer-copyright" align="center">
+										<p style="font-family: Arial, sans-serif;">Click <a href="#" style="font-family: Arial, sans-serif;">here</a> to unsubscribe. Copyright © 2017 <br>All rights reserved</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td height="30" width="600"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
